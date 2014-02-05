@@ -4,10 +4,10 @@ define carouselDivs(){
 	var idAttr := attribute("id");
 	var elemId := if (idAttr != "") idAttr else "carousel-"+randomUUID().toString();
 	includeJS("jquery-1.8.2.min.js")
-	includeJS("owl.carousel.min.js")
-	includeCSS("owl.theme.css")
-	includeCSS("owl.carousel.css")
-	includeCSS("owl.transitions.css")
+	includeJS("owl-carousel/owl.carousel.min.js")
+	includeCSS("owl-carousel/owl.theme.css")
+	includeCSS("owl-carousel/owl.carousel.css")
+	includeCSS("owl-carousel/owl.transitions.css")
 	
 	div[id=elemId]{
 		elements
