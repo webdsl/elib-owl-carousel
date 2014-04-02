@@ -3,7 +3,7 @@ module elib/elib-owl-carousel/lib
 define carouselDivs(){
 	var idAttr := attribute("id");
 	var elemId := if (idAttr != "") idAttr else "carousel-"+randomUUID().toString();
-	includeJS("jquery-1.8.2.min.js")
+	includeJS( IncludePaths.jQueryJS() )
 	includeJS("owl-carousel/owl.carousel.min.js")
 	includeCSS("owl-carousel/owl.theme.css")
 	includeCSS("owl-carousel/owl.carousel.css")
